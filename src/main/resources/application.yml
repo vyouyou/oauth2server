@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://39.106.24.103/cloudpermission
+    username: root
+    password: 1234566
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  cloud:
+    consul:
+      host: 39.106.24.103
+      port: 8500
+      discovery:
+        service-name: oauth2
+  redis:
+    host: 39.106.24.103
+  application:
+    name: oauth
+mybatis:
+  type-aliases-package: com.youyou.oauth2server.dao.model
+logging:
+  level:
+    org:
+      spring-framework:
+        security: DEBUG
