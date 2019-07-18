@@ -20,5 +20,5 @@ mybatis:
 logging:
   level:
     org:
-      spring-framework:
+      springframework:
         security: DEBUG
